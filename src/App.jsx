@@ -1,13 +1,18 @@
 import { useState } from 'react'
 import './App.css'
 import Quiz from './Components/Quiz'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Splash from './Components/splashscreen'
 
 function App() {
 
   return (
-    <div>
-      <Quiz/>
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Splash/>}/>
+        <Route exact path="/quiz" element={<Quiz/>}/>
+      </Routes>
+    </Router>
     
   )
 }

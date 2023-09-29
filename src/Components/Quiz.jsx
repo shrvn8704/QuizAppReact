@@ -8,6 +8,7 @@ const Quiz = () => {
     const [showResult , setShowResult] = useState(false);
     const changeQuesion = () =>{
         updateScore();
+        // alert("Hello, this is an alert!");
         if(currentQuestion<QuizData.length-1){
             setCurrentQuestion(currentQuestion+1);
             setClicked(0);
@@ -51,7 +52,7 @@ const Quiz = () => {
                         })}
 
                     </div>
-                    <input id="next-button" type="button" value="Next" onClick={changeQuesion}></input>
+                    <input className="next-button" type="button" value="Next" onClick={changeQuesion}></input>
                     </>
                 )}
             </div>
