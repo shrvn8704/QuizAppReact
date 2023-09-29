@@ -7,7 +7,7 @@ import Splash from './Components/splashscreen'
 function App() {
 
   return (
-    <Router basename="/QuizAppReact">
+    <Router>
       <Routes>
         <Route exact path="/" element={<Splash/>}/>
         <Route exact path="/quiz" element={<Quiz/>}/>
